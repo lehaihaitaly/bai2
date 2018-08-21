@@ -38,8 +38,8 @@ public class testcase {
 		WebDriverWait myWait = new WebDriverWait(driver, 50000);
 		myWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("fcuploadsummary")));
 		String bodyText = driver.getPageSource();
-		Assert.assertEquals("nashtech@gmail.com", bodyText.contains("nashtech@gmail.com"));
-		Assert.assertEquals("UploadFile.PNG", bodyText.contains("UploadFile.PNG"));
-		Assert.assertEquals("nashtech", bodyText.contains("nashtech"));	}
+		Assert.assertEquals("true", bodyText.contains("nashtech@gmail.com"));
+		Assert.assertEquals("true", bodyText.contains("UploadFile.PNG"));
+		Assert.assertEquals("true", bodyText.contains("nashtech"));	}
 	
 }
